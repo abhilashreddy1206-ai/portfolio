@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhilash Reddy K | Portfolio</title>
+    <meta name="description" content="Portfolio of Abhilash Reddy K - B.Tech CSBS Student & Full Stack Developer">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Abhilash<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-extras">
+                <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h4>Welcome to my world</h4>
+                <h1>I'm <span class="gradient-text">Abhilash Reddy K</span></h1>
+                <p>I am a <span class="typing"></span></p>
+                <div class="hero-btns">
+                    <a href="assets/resume.pdf" class="btn primary" download>Download CV</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <div class="img-border">
+                    <img src="assets/profile.jpg" alt="Abhilash Reddy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-info" data-aos="fade-right">
+                <p>I am a dedicated <strong>B.Tech Computer Science & Business Systems (CSBS)</strong> student. I bridge the gap between technical execution and business strategy. I am passionate about building full-stack applications and exploring the potential of AI to solve real-world problems.</p>
+                <div class="about-grid">
+                    <div class="about-item"><strong>Goals:</strong> To build scalable software.</div>
+                    <div class="about-item"><strong>Passions:</strong> Problem solving & UI design.</div>
+                    <div class="about-item"><strong>Education:</strong> B.Tech CSBS.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title" data-aos="fade-up">Technical <span>Skills</span></h2>
+        <div class="skills-wrapper">
+            <!-- Frontend -->
+            <div class="skill-card" data-aos="zoom-in">
+                <h3>Frontend</h3>
+                <div class="skill-list">
+                    <div class="skill"><span>HTML/CSS</span> <div class="bar"><div class="fill" style="width: 95%;"></div></div></div>
+                    <div class="skill"><span>JavaScript</span> <div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+                    <div class="skill"><span>React</span> <div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+                    <div class="skill"><span>Tailwind</span> <div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+                </div>
+            </div>
+            <!-- Backend/DB -->
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>Backend & Database</h3>
+                <div class="skill-list">
+                    <div class="skill"><span>Node.js</span> <div class="bar"><div class="fill" style="width: 75%;"></div></div></div>
+                    <div class="skill"><span>Express</span> <div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+                    <div class="skill"><span>MongoDB</span> <div class="bar"><div class="fill" style="width: 70%;"></div></div></div>
+                    <div class="skill"><span>MySQL</span> <div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+                </div>
+            </div>
+            <!-- Languages/Tools -->
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Languages & Tools</h3>
+                <div class="skill-list">
+                    <div class="skill"><span>Java / Python</span> <div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+                    <div class="skill"><span>C</span> <div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+                    <div class="skill"><span>Git / GitHub</span> <div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+                    <div class="skill"><span>Figma</span> <div class="bar"><div class="fill" style="width: 75%;"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title" data-aos="fade-up">Featured <span>Projects</span></h2>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="p-img"><img src="https://via.placeholder.com/300x180" alt="Smart ID"></div>
+                <div class="p-content">
+                    <h3>Smart ID Card Detection</h3>
+                    <p>AI-based system to detect and verify ID cards using computer vision.</p>
+                    <div class="p-tags"><span>Python</span> <span>OpenCV</span></div>
+                    <div class="p-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="p-img"><img src="https://via.placeholder.com/300x180" alt="Weather"></div>
+                <div class="p-content">
+                    <h3>Weather Web App</h3>
+                    <p>Real-time weather data fetching with high-end UI visuals.</p>
+                    <div class="p-tags"><span>JS</span> <span>API</span></div>
+                    <div class="p-links"><a href="#"><i class="fab fa-github"></i></a></div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Intern - Titan Company Ltd.</h3>
+                    <p>Focused on Web Development modules. Mastered advanced Excel for data tracking and optimized internal database queries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-aos="fade-up">Get <span>In Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-form-glass" data-aos="flip-left">
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Abhilash Reddy K. Created with <i class="fas fa-heart"></i></p>
+        <button id="scroll-top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

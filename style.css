@@ -1,0 +1,141 @@
+:root {
+    --bg: #ffffff;
+    --second-bg: #f5f7ff;
+    --text: #1a1a1a;
+    --main: #6366f1;
+    --accent: #8b5cf6;
+    --glass: rgba(255, 255, 255, 0.7);
+    --border: rgba(255, 255, 255, 0.3);
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.dark-mode {
+    --bg: #0f172a;
+    --second-bg: #1e293b;
+    --text: #f8fafc;
+    --main: #818cf8;
+    --accent: #a78bfa;
+    --glass: rgba(30, 41, 59, 0.7);
+    --border: rgba(255, 255, 255, 0.05);
+    --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Navbar */
+header {
+    position: fixed; top: 0; width: 100%; z-index: 1000;
+    padding: 20px 10%;
+}
+
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.logo { font-size: 1.5rem; font-weight: 700; }
+.logo span { color: var(--main); }
+
+.nav-links { display: flex; list-style: none; gap: 2rem; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+.nav-links a:hover { color: var(--main); }
+
+.nav-extras { display: flex; gap: 15px; align-items: center; cursor: pointer; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex; align-items: center;
+    padding: 0 10%;
+    background: radial-gradient(circle at 0% 0%, var(--main) -100%, transparent 40%);
+}
+
+.hero-container { display: flex; align-items: center; gap: 4rem; }
+.gradient-text {
+    background: linear-gradient(90deg, var(--main), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content h1 { font-size: 3.5rem; }
+.hero-content p { font-size: 1.2rem; margin: 15px 0; }
+
+.btn {
+    padding: 12px 28px; border-radius: 30px; 
+    text-decoration: none; font-weight: 600; display: inline-block;
+}
+.primary { background: var(--main); color: #fff; margin-right: 15px; }
+.secondary { border: 2px solid var(--main); color: var(--main); }
+
+.hero-img .img-border {
+    width: 350px; height: 350px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background: var(--main);
+    overflow: hidden;
+    animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+}
+
+/* Sections */
+section { padding: 100px 10%; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
+.section-title span { color: var(--main); }
+
+/* Skills */
+.skills-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.skill-card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 30px; border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.bar { background: #e2e8f0; height: 8px; border-radius: 10px; margin-top: 5px; margin-bottom: 15px; }
+.fill { background: var(--main); height: 100%; border-radius: 10px; }
+
+/* Contact Form Glass */
+.contact-form-glass {
+    max-width: 600px; margin: 0 auto;
+    background: var(--glass);
+    padding: 40px; border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+}
+
+form input, form textarea {
+    width: 100%; padding: 15px; margin-bottom: 20px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--border);
+    border-radius: 10px; color: var(--text);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar { padding: 10px 20px; }
+    .nav-links { display: none; } /* Hide for simple burger logic */
+    .hero-container { flex-direction: column-reverse; text-align: center; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-img .img-border { width: 250px; height: 250px; }
+}
