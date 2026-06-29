@@ -1,9 +1,14 @@
+// Initialize EmailJS
+(function() {
+    emailjs.init("YoRA9NcIcEo6Vwy2c");
+})();
+
 // Initialization
 document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Typing Animation
     const typed = new Typed('.typing', {
-        strings: ['B.Tech CSBS Student', 'Full Stack Developer', 'Software Engineer Aspiring', 'Tech Enthusiast'],
+        strings: ['B.Tech CSBS Student'],
         typeSpeed: 60,
         backSpeed: 40,
         loop: true
@@ -65,11 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // 6. Contact Form Alert
+    // 6. Contact Form - Send Email via EmailJS
     const contactForm = document.querySelector('#contact-form');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Message Sent Successfully! Abhilash will contact you soon.');
-        contactForm.reset();
+        
+        // Send email using EmailJS
+        emailjs.sendForm('service_e9q4beh', 'template_wj1c3jr', contactForm)
+            .then((response) => {
+                alert('Message Sent Successfully! Abhilash will contact you soon.');
+                contactForm.reset();
+            }, (error) => {
+                alert('Failed to send message. Please try again.');
+                console.log('FAILED...', error);
+            });
     });
 });

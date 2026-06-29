@@ -13,6 +13,8 @@
     <!-- Libraries -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body class="dark-mode">
 
@@ -42,12 +44,12 @@
                 <h1>I'm <span class="gradient-text">Abhilash Reddy K</span></h1>
                 <p>I am a <span class="typing"></span></p>
                 <div class="hero-btns">
-                    <a href="assets/resume.pdf" class="btn primary" download>Download CV</a>
+                    <a href="assets/resume.pdf" class="btn primary" download>Download Resume</a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhilash-reddy-k-00595733a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/abhilashreddy1206-ai" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="hero-img">
@@ -147,7 +149,7 @@
         <div class="timeline">
             <div class="timeline-item" data-aos="fade-left">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
+                <div class="timeline-date">22 June - 3 July 2026</div>
                 <div class="timeline-content">
                     <h3>Intern - Titan Company Ltd.</h3>
                     <p>Focused on Web Development modules. Mastered advanced Excel for data tracking and optimized internal database queries.</p>
@@ -162,9 +164,9 @@
         <div class="contact-container">
             <div class="contact-form-glass" data-aos="flip-left">
                 <form id="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
                     <button type="submit" class="btn primary">Send Message</button>
                 </form>
             </div>
